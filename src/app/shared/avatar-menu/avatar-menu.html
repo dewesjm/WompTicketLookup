@@ -1,0 +1,99 @@
+<button
+  type="button"
+  class="btn btn-circle btn-accent font-semibold"
+  cdkOverlayOrigin
+  #trigger="cdkOverlayOrigin"
+  [attr.aria-expanded]="open()"
+  aria-haspopup="true"
+  aria-controls="avatar-menu-panel"
+  [attr.aria-label]="viewer.initials() + ': account, preferences and theme for ' + viewer.viewer().name"
+  (click)="toggle()"
+>
+  {{ viewer.initials() }}
+</button>
+
+<!-- Angular CDK overlay: positions the panel; a click outside or Escape closes it. -->
+<ng-template
+  cdkConnectedOverlay
+  [cdkConnectedOverlayOrigin]="trigger"
+  [cdkConnectedOverlayOpen]="open()"
+  [cdkConnectedOverlayPositions]="positions"
+  cdkConnectedOverlayHasBackdrop
+  cdkConnectedOverlayBackdropClass="cdk-overlay-transparent-backdrop"
+  (backdropClick)="close()"
+  (detach)="close()"
+>
+  <div
+    id="avatar-menu-panel"
+    class="mt-2 max-h-[calc(100dvh-5rem)] w-80 max-w-[calc(100vw-2rem)] overflow-y-auto rounded-box border border-base-300 bg-base-100 text-base-content shadow-lg"
+  >
+    <div class="border-b border-base-300 px-4 py-3">
+      <div class="font-semibold">{{ viewer.viewer().name }}</div>
+      <div class="text-sm opacity-70">{{ viewer.viewer().title }}</div>
+    </div>
+
+    <div class="space-y-2 border-b border-base-300 px-4 py-3" data-testid="preferences">
+      <div class="text-xs font-semibold uppercase opacity-70">Preferences</div>
+      <label class="flex flex-col gap-1 text-xs font-medium">
+        View as (demo)
+        <select
+          class="select select-sm w-full border-base-content/40"
+          data-testid="persona"
+          (change)="setPersona($any($event.target).value)"
+        >
+          @for (p of personas.personas(); track p.id) {
+            <option [value]="p.id" [selected]="p.id === viewer.viewer().id">
+              {{ p.name }} ({{ p.title }})
+            </option>
+          }
+        </select>
+      </label>
+    </div>
+
+    <div class="p-2" role="radiogroup" aria-label="Theme">
+      <button
+        type="button"
+        role="radio"
+        class="flex w-full items-center gap-3 rounded-field px-2 py-1.5 text-left text-sm hover:bg-base-200 focus-visible:bg-base-200"
+        [attr.aria-checked]="themes.following()"
+        (click)="themes.setFollowing(true)"
+      >
+        Same as my other apps
+      </button>
+      <div class="px-2 pt-1 pb-2 text-xs font-semibold uppercase opacity-70">Theme for this app</div>
+      @for (t of brandThemes; track t.id) {
+        <ng-container *ngTemplateOutlet="option; context: { $implicit: t }" />
+      }
+      <div class="px-2 pt-3 pb-2 text-xs font-semibold uppercase opacity-70">More themes</div>
+      @for (t of builtInThemes; track t.id) {
+        <ng-container *ngTemplateOutlet="option; context: { $implicit: t }" />
+      }
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #option let-t>
+  <button
+    type="button"
+    role="radio"
+    class="flex w-full items-center gap-3 rounded-field px-2 py-1.5 text-left text-sm hover:bg-base-200 focus-visible:bg-base-200"
+    [attr.aria-checked]="!themes.following() && themes.theme() === t.id"
+    [attr.data-theme-option]="t.id"
+    (click)="pick(t.id)"
+  >
+    <span
+      [attr.data-theme]="t.id"
+      class="flex shrink-0 gap-0.5 rounded-selector border border-base-300 bg-base-100 p-1"
+      aria-hidden="true"
+    >
+      <span class="size-2.5 rounded-full bg-primary"></span>
+      <span class="size-2.5 rounded-full bg-secondary"></span>
+      <span class="size-2.5 rounded-full bg-accent"></span>
+      <span class="size-2.5 rounded-full bg-neutral"></span>
+    </span>
+    <span class="grow">{{ t.label }}</span>
+    @if (!themes.following() && themes.theme() === t.id) {
+      <wt-icon name="check" />
+    }
+  </button>
+</ng-template>

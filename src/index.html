@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" data-theme="navy">
+  <head>
+    <meta charset="utf-8" />
+    <title>Womp Ticket Lookup</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1b2f5b" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script>
+      // Apply the saved theme before Angular starts, so there is no flash of the default theme.
+      // The key is PREFERENCES_KEY in src/data/browser/local-preferences-repository.ts.
+      try {
+        var preferences = JSON.parse(localStorage.getItem('womp-ticket-lookup.preferences'));
+        var t = preferences?.schemaVersion >= 2 ? preferences.theme : null;
+        if (typeof t === 'string' && /^[a-z-]+$/.test(t)) document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <wt-root></wt-root>
+    <noscript>Please enable JavaScript to use Womp Ticket Lookup.</noscript>
+  </body>
+</html>

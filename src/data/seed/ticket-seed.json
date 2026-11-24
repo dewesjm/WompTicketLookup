@@ -1,0 +1,1850 @@
+{
+  "$comment": "Womp Ticket Lookup sample data, made from ZORD's (same orders, confirmation numbers, people and labor) plus work centers, WBS and cost centers. Fake data only. Made by scripts/make-sample-data.cjs; don't edit by hand.",
+  "asOf": "2026-11-21",
+  "people": [
+    {
+      "id": "u-director",
+      "employeeNumber": "E00118",
+      "firstName": "Pat",
+      "lastName": "Walsh",
+      "title": "Director, Ship Repair",
+      "costCenter": "40100"
+    },
+    {
+      "id": "u-general-foreman",
+      "employeeNumber": "E00342",
+      "firstName": "Chris",
+      "lastName": "Okafor",
+      "title": "General Foreman",
+      "costCenter": "40100"
+    },
+    {
+      "id": "u-foreman-haddad",
+      "employeeNumber": "E01207",
+      "firstName": "Rita",
+      "lastName": "Haddad",
+      "title": "Pipe Foreman",
+      "costCenter": "41560"
+    },
+    {
+      "id": "u-foreman-nguyen",
+      "employeeNumber": "E01455",
+      "firstName": "Tomas",
+      "lastName": "Nguyen",
+      "title": "Weld Foreman",
+      "costCenter": "41570"
+    },
+    {
+      "id": "u-foreman-brennan",
+      "employeeNumber": "E01693",
+      "firstName": "Lee",
+      "lastName": "Brennan",
+      "title": "Shop Foreman",
+      "costCenter": "41310"
+    },
+    {
+      "id": "u-pipefitter",
+      "employeeNumber": "E10482",
+      "firstName": "Dana",
+      "lastName": "Ortiz",
+      "title": "Pipefitter",
+      "costCenter": "41560"
+    },
+    {
+      "id": "u-pipefitter-2",
+      "employeeNumber": "E10931",
+      "firstName": "Riley",
+      "lastName": "Shaw",
+      "title": "Pipefitter",
+      "costCenter": "41560"
+    },
+    {
+      "id": "u-pipefitter-3",
+      "employeeNumber": "E11374",
+      "firstName": "Jamie",
+      "lastName": "Novak",
+      "title": "Pipefitter Apprentice",
+      "costCenter": "41560"
+    },
+    {
+      "id": "u-welder",
+      "employeeNumber": "E20917",
+      "firstName": "Sam",
+      "lastName": "Kowalski",
+      "title": "Welder",
+      "costCenter": "41570"
+    },
+    {
+      "id": "u-welder-new",
+      "employeeNumber": "E31206",
+      "firstName": "Jordan",
+      "lastName": "Reyes",
+      "title": "Welder",
+      "costCenter": "41570"
+    },
+    {
+      "id": "u-welder-3",
+      "employeeNumber": "E21688",
+      "firstName": "Avery",
+      "lastName": "Brooks",
+      "title": "Welder",
+      "costCenter": "41570"
+    },
+    {
+      "id": "u-machinist",
+      "employeeNumber": "E41530",
+      "firstName": "Alex",
+      "lastName": "Chen",
+      "title": "Machinist",
+      "costCenter": "41310"
+    },
+    {
+      "id": "u-shop-welder",
+      "employeeNumber": "E52274",
+      "firstName": "Morgan",
+      "lastName": "Lee",
+      "title": "Shop Welder",
+      "costCenter": "41570"
+    },
+    {
+      "id": "u-admin",
+      "employeeNumber": "E00977",
+      "firstName": "Casey",
+      "lastName": "Park",
+      "title": "Planning Admin",
+      "costCenter": "40100"
+    },
+    {
+      "id": "u-developer",
+      "employeeNumber": "E09001",
+      "firstName": "Cameron",
+      "lastName": "Ellis",
+      "title": "Developer",
+      "costCenter": "40900"
+    },
+    {
+      "id": "u-foreman-ito",
+      "employeeNumber": "E01822",
+      "firstName": "Ken",
+      "lastName": "Ito",
+      "title": "Electrical Foreman",
+      "costCenter": "41580"
+    },
+    {
+      "id": "u-foreman-mendez",
+      "employeeNumber": "E01964",
+      "firstName": "Sofia",
+      "lastName": "Mendez",
+      "title": "Rigging Foreman",
+      "costCenter": "41590"
+    },
+    {
+      "id": "u-aaron-blake",
+      "employeeNumber": "E60000",
+      "firstName": "Aaron",
+      "lastName": "Blake",
+      "title": "Pipefitter",
+      "costCenter": "41560"
+    },
+    {
+      "id": "u-bianca-cruz",
+      "employeeNumber": "E60137",
+      "firstName": "Bianca",
+      "lastName": "Cruz",
+      "title": "Welder",
+      "costCenter": "41570"
+    },
+    {
+      "id": "u-caleb-dunn",
+      "employeeNumber": "E60274",
+      "firstName": "Caleb",
+      "lastName": "Dunn",
+      "title": "Machinist",
+      "costCenter": "41310"
+    },
+    {
+      "id": "u-dmitri-volkov",
+      "employeeNumber": "E60411",
+      "firstName": "Dmitri",
+      "lastName": "Volkov",
+      "title": "Electrician",
+      "costCenter": "41580"
+    },
+    {
+      "id": "u-elena-park",
+      "employeeNumber": "E60548",
+      "firstName": "Elena",
+      "lastName": "Park",
+      "title": "Rigger",
+      "costCenter": "41590"
+    },
+    {
+      "id": "u-felix-grant",
+      "employeeNumber": "E60685",
+      "firstName": "Felix",
+      "lastName": "Grant",
+      "title": "Pipefitter",
+      "costCenter": "41560"
+    },
+    {
+      "id": "u-gina-torres",
+      "employeeNumber": "E60822",
+      "firstName": "Gina",
+      "lastName": "Torres",
+      "title": "Welder",
+      "costCenter": "41570"
+    },
+    {
+      "id": "u-hassan-ali",
+      "employeeNumber": "E60959",
+      "firstName": "Hassan",
+      "lastName": "Ali",
+      "title": "Machinist",
+      "costCenter": "41310"
+    },
+    {
+      "id": "u-ivy-chen",
+      "employeeNumber": "E61096",
+      "firstName": "Ivy",
+      "lastName": "Chen",
+      "title": "Electrician",
+      "costCenter": "41580"
+    },
+    {
+      "id": "u-jalen-moore",
+      "employeeNumber": "E61233",
+      "firstName": "Jalen",
+      "lastName": "Moore",
+      "title": "Rigger",
+      "costCenter": "41590"
+    },
+    {
+      "id": "u-kara-lindqvist",
+      "employeeNumber": "E61370",
+      "firstName": "Kara",
+      "lastName": "Lindqvist",
+      "title": "Pipefitter",
+      "costCenter": "41560"
+    },
+    {
+      "id": "u-luis-romero",
+      "employeeNumber": "E61507",
+      "firstName": "Luis",
+      "lastName": "Romero",
+      "title": "Welder",
+      "costCenter": "41570"
+    },
+    {
+      "id": "u-maya-patel",
+      "employeeNumber": "E61644",
+      "firstName": "Maya",
+      "lastName": "Patel",
+      "title": "Machinist",
+      "costCenter": "41310"
+    },
+    {
+      "id": "u-nolan-price",
+      "employeeNumber": "E61781",
+      "firstName": "Nolan",
+      "lastName": "Price",
+      "title": "Electrician",
+      "costCenter": "41580"
+    },
+    {
+      "id": "u-olivia-hart",
+      "employeeNumber": "E61918",
+      "firstName": "Olivia",
+      "lastName": "Hart",
+      "title": "Rigger",
+      "costCenter": "41590"
+    },
+    {
+      "id": "u-paulo-silva",
+      "employeeNumber": "E62055",
+      "firstName": "Paulo",
+      "lastName": "Silva",
+      "title": "Pipefitter",
+      "costCenter": "41560"
+    },
+    {
+      "id": "u-quinn-foster",
+      "employeeNumber": "E62192",
+      "firstName": "Quinn",
+      "lastName": "Foster",
+      "title": "Welder",
+      "costCenter": "41570"
+    },
+    {
+      "id": "u-rosa-delgado",
+      "employeeNumber": "E62329",
+      "firstName": "Rosa",
+      "lastName": "Delgado",
+      "title": "Machinist",
+      "costCenter": "41310"
+    },
+    {
+      "id": "u-seth-turner",
+      "employeeNumber": "E62466",
+      "firstName": "Seth",
+      "lastName": "Turner",
+      "title": "Electrician",
+      "costCenter": "41580"
+    },
+    {
+      "id": "u-tanya-ivanova",
+      "employeeNumber": "E62603",
+      "firstName": "Tanya",
+      "lastName": "Ivanova",
+      "title": "Rigger",
+      "costCenter": "41590"
+    },
+    {
+      "id": "u-umar-haddad",
+      "employeeNumber": "E62740",
+      "firstName": "Umar",
+      "lastName": "Haddad",
+      "title": "Pipefitter",
+      "costCenter": "41560"
+    },
+    {
+      "id": "u-vera-kim",
+      "employeeNumber": "E62877",
+      "firstName": "Vera",
+      "lastName": "Kim",
+      "title": "Welder",
+      "costCenter": "41570"
+    },
+    {
+      "id": "u-wes-carter",
+      "employeeNumber": "E63014",
+      "firstName": "Wes",
+      "lastName": "Carter",
+      "title": "Machinist",
+      "costCenter": "41310"
+    },
+    {
+      "id": "u-xavier-bell",
+      "employeeNumber": "E63151",
+      "firstName": "Xavier",
+      "lastName": "Bell",
+      "title": "Electrician",
+      "costCenter": "41580"
+    },
+    {
+      "id": "u-yara-nasser",
+      "employeeNumber": "E63288",
+      "firstName": "Yara",
+      "lastName": "Nasser",
+      "title": "Rigger",
+      "costCenter": "41590"
+    },
+    {
+      "id": "u-zeke-holloway",
+      "employeeNumber": "E63425",
+      "firstName": "Zeke",
+      "lastName": "Holloway",
+      "title": "Pipefitter",
+      "costCenter": "41560"
+    }
+  ],
+  "orders": [
+    {
+      "orderNumber": "518789751",
+      "wbs": "W.2026.039.01"
+    },
+    {
+      "orderNumber": "513671487",
+      "wbs": "W.2026.039.01"
+    },
+    {
+      "orderNumber": "500162002",
+      "wbs": "W.2026.039.01"
+    },
+    {
+      "orderNumber": "519463792",
+      "wbs": "W.2026.046.02"
+    },
+    {
+      "orderNumber": "216912343",
+      "wbs": "W.2026.046.02"
+    },
+    {
+      "orderNumber": "511267910",
+      "wbs": "W.2026.046.02"
+    },
+    {
+      "orderNumber": "509159769",
+      "wbs": "W.2026.044.03"
+    },
+    {
+      "orderNumber": "511931551",
+      "wbs": "W.2026.044.03"
+    },
+    {
+      "orderNumber": "516661397",
+      "wbs": "W.2026.044.03"
+    },
+    {
+      "orderNumber": "504567981",
+      "wbs": "W.2026.034.04"
+    },
+    {
+      "orderNumber": "205552222",
+      "wbs": "W.2026.034.04"
+    },
+    {
+      "orderNumber": "515541289",
+      "wbs": "W.2026.034.04"
+    },
+    {
+      "orderNumber": "209657977",
+      "wbs": "W.2026.046.05"
+    },
+    {
+      "orderNumber": "204646985",
+      "wbs": "W.2026.046.05"
+    },
+    {
+      "orderNumber": "210242326",
+      "wbs": "W.2026.046.05"
+    },
+    {
+      "orderNumber": "203000340",
+      "wbs": "W.2026.046.05"
+    },
+    {
+      "orderNumber": "518496339",
+      "wbs": "W.2026.047.06"
+    },
+    {
+      "orderNumber": "506158022",
+      "wbs": "W.2026.047.06"
+    },
+    {
+      "orderNumber": "207579480",
+      "wbs": "W.2026.047.06"
+    },
+    {
+      "orderNumber": "515452175",
+      "wbs": "W.2026.027.07"
+    },
+    {
+      "orderNumber": "212731744",
+      "wbs": "W.2026.027.07"
+    },
+    {
+      "orderNumber": "212466363",
+      "wbs": "W.2026.027.07"
+    },
+    {
+      "orderNumber": "214927966",
+      "wbs": "W.2026.027.07"
+    },
+    {
+      "orderNumber": "510263387",
+      "wbs": "W.2026.024.08"
+    },
+    {
+      "orderNumber": "215255762",
+      "wbs": "W.2026.024.08"
+    },
+    {
+      "orderNumber": "507365317",
+      "wbs": "W.2026.024.08"
+    },
+    {
+      "orderNumber": "216293403",
+      "wbs": "W.2026.019.09"
+    },
+    {
+      "orderNumber": "519664667",
+      "wbs": "W.2026.019.09"
+    },
+    {
+      "orderNumber": "515186590",
+      "wbs": "W.2026.019.09"
+    },
+    {
+      "orderNumber": "206797772",
+      "wbs": "W.2026.015.10"
+    },
+    {
+      "orderNumber": "513629094",
+      "wbs": "W.2026.015.10"
+    },
+    {
+      "orderNumber": "218363513",
+      "wbs": "W.2026.015.10"
+    }
+  ],
+  "workCenters": [
+    {
+      "code": "PF-5610",
+      "name": "Pipefitting"
+    },
+    {
+      "code": "WD-5710",
+      "name": "Structural welding"
+    },
+    {
+      "code": "MS-3110",
+      "name": "Machine shop"
+    },
+    {
+      "code": "EL-5810",
+      "name": "Electrical"
+    },
+    {
+      "code": "RG-5910",
+      "name": "Rigging"
+    }
+  ],
+  "operations": [
+    {
+      "confirmationNumber": "2182183003",
+      "orderNumber": "518789751",
+      "operationNumber": "0010",
+      "description": "Install hangers",
+      "workCenter": "PF-5610",
+      "status": "complete",
+      "targetHours": 8
+    },
+    {
+      "confirmationNumber": "2055271258",
+      "orderNumber": "518789751",
+      "operationNumber": "0020",
+      "description": "Make up flanges",
+      "workCenter": "PF-5610",
+      "status": "in-work",
+      "targetHours": 14
+    },
+    {
+      "confirmationNumber": "2042716493",
+      "orderNumber": "518789751",
+      "operationNumber": "0030",
+      "description": "Install valve",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 4
+    },
+    {
+      "confirmationNumber": "2001264027",
+      "orderNumber": "513671487",
+      "operationNumber": "0010",
+      "description": "Fit up new spool",
+      "workCenter": "PF-5610",
+      "status": "complete",
+      "targetHours": 12
+    },
+    {
+      "confirmationNumber": "2048097666",
+      "orderNumber": "513671487",
+      "operationNumber": "0020",
+      "description": "Install hangers",
+      "workCenter": "PF-5610",
+      "status": "complete",
+      "targetHours": 16
+    },
+    {
+      "confirmationNumber": "2198772038",
+      "orderNumber": "513671487",
+      "operationNumber": "0030",
+      "description": "Make up flanges",
+      "workCenter": "PF-5610",
+      "status": "in-work",
+      "targetHours": 18
+    },
+    {
+      "confirmationNumber": "2197788278",
+      "orderNumber": "513671487",
+      "operationNumber": "0040",
+      "description": "Install valve",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 14
+    },
+    {
+      "confirmationNumber": "2125514477",
+      "orderNumber": "500162002",
+      "operationNumber": "0010",
+      "description": "Install rigging points",
+      "workCenter": "RG-5910",
+      "status": "not-started",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2043705497",
+      "orderNumber": "500162002",
+      "operationNumber": "0020",
+      "description": "Rig and lift",
+      "workCenter": "RG-5910",
+      "status": "not-started",
+      "targetHours": 12
+    },
+    {
+      "confirmationNumber": "2117884842",
+      "orderNumber": "500162002",
+      "operationNumber": "0030",
+      "description": "Move through hatch",
+      "workCenter": "RG-5910",
+      "status": "not-started",
+      "targetHours": 18
+    },
+    {
+      "confirmationNumber": "2191540861",
+      "orderNumber": "519463792",
+      "operationNumber": "0010",
+      "description": "Fit up new spool",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 12
+    },
+    {
+      "confirmationNumber": "2173022698",
+      "orderNumber": "519463792",
+      "operationNumber": "0020",
+      "description": "Install hangers",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 24
+    },
+    {
+      "confirmationNumber": "2084062372",
+      "orderNumber": "216912343",
+      "operationNumber": "0010",
+      "description": "Install valve",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2117192189",
+      "orderNumber": "216912343",
+      "operationNumber": "0020",
+      "description": "Hydrostatic test",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 14
+    },
+    {
+      "confirmationNumber": "2047180371",
+      "orderNumber": "216912343",
+      "operationNumber": "0030",
+      "description": "Reinstall insulation",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 4
+    },
+    {
+      "confirmationNumber": "2151858888",
+      "orderNumber": "511267910",
+      "operationNumber": "0010",
+      "description": "Root pass",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 18
+    },
+    {
+      "confirmationNumber": "2053727630",
+      "orderNumber": "511267910",
+      "operationNumber": "0020",
+      "description": "Fill and cap",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 12
+    },
+    {
+      "confirmationNumber": "2174788211",
+      "orderNumber": "511267910",
+      "operationNumber": "0030",
+      "description": "Grind flush",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 22
+    },
+    {
+      "confirmationNumber": "2148850996",
+      "orderNumber": "509159769",
+      "operationNumber": "0010",
+      "description": "Root pass",
+      "workCenter": "WD-5710",
+      "status": "in-work",
+      "targetHours": 16
+    },
+    {
+      "confirmationNumber": "2157110539",
+      "orderNumber": "509159769",
+      "operationNumber": "0020",
+      "description": "Fill and cap",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 4
+    },
+    {
+      "confirmationNumber": "2020672120",
+      "orderNumber": "509159769",
+      "operationNumber": "0030",
+      "description": "Grind flush",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 6
+    },
+    {
+      "confirmationNumber": "2000509740",
+      "orderNumber": "509159769",
+      "operationNumber": "0040",
+      "description": "Liquid penetrant inspection",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 6
+    },
+    {
+      "confirmationNumber": "2185624820",
+      "orderNumber": "511931551",
+      "operationNumber": "0010",
+      "description": "Fit up joint",
+      "workCenter": "WD-5710",
+      "status": "complete",
+      "targetHours": 24
+    },
+    {
+      "confirmationNumber": "2096195474",
+      "orderNumber": "511931551",
+      "operationNumber": "0020",
+      "description": "Root pass",
+      "workCenter": "WD-5710",
+      "status": "complete",
+      "targetHours": 6
+    },
+    {
+      "confirmationNumber": "2122361356",
+      "orderNumber": "511931551",
+      "operationNumber": "0030",
+      "description": "Fill and cap",
+      "workCenter": "WD-5710",
+      "status": "in-work",
+      "targetHours": 10
+    },
+    {
+      "confirmationNumber": "2082990386",
+      "orderNumber": "516661397",
+      "operationNumber": "0010",
+      "description": "Grind flush",
+      "workCenter": "WD-5710",
+      "status": "complete",
+      "targetHours": 6
+    },
+    {
+      "confirmationNumber": "2106086315",
+      "orderNumber": "516661397",
+      "operationNumber": "0020",
+      "description": "Liquid penetrant inspection",
+      "workCenter": "WD-5710",
+      "status": "complete",
+      "targetHours": 18
+    },
+    {
+      "confirmationNumber": "2183264427",
+      "orderNumber": "516661397",
+      "operationNumber": "0030",
+      "description": "Seal weld",
+      "workCenter": "WD-5710",
+      "status": "complete",
+      "targetHours": 6
+    },
+    {
+      "confirmationNumber": "2184409077",
+      "orderNumber": "504567981",
+      "operationNumber": "0010",
+      "description": "Make up flanges",
+      "workCenter": "PF-5610",
+      "status": "complete",
+      "targetHours": 4
+    },
+    {
+      "confirmationNumber": "2006094976",
+      "orderNumber": "504567981",
+      "operationNumber": "0020",
+      "description": "Install valve",
+      "workCenter": "PF-5610",
+      "status": "complete",
+      "targetHours": 12
+    },
+    {
+      "confirmationNumber": "2074485039",
+      "orderNumber": "504567981",
+      "operationNumber": "0030",
+      "description": "Hydrostatic test",
+      "workCenter": "PF-5610",
+      "status": "complete",
+      "targetHours": 24
+    },
+    {
+      "confirmationNumber": "2050289260",
+      "orderNumber": "205552222",
+      "operationNumber": "0010",
+      "description": "Install hangers",
+      "workCenter": "PF-5610",
+      "status": "complete",
+      "targetHours": 8
+    },
+    {
+      "confirmationNumber": "2191186666",
+      "orderNumber": "205552222",
+      "operationNumber": "0020",
+      "description": "Make up flanges",
+      "workCenter": "PF-5610",
+      "status": "complete",
+      "targetHours": 14
+    },
+    {
+      "confirmationNumber": "2009730615",
+      "orderNumber": "205552222",
+      "operationNumber": "0030",
+      "description": "Install valve",
+      "workCenter": "PF-5610",
+      "status": "in-work",
+      "targetHours": 10
+    },
+    {
+      "confirmationNumber": "2143167076",
+      "orderNumber": "515541289",
+      "operationNumber": "0010",
+      "description": "Disconnect and remove old pipe",
+      "workCenter": "PF-5610",
+      "status": "in-work",
+      "targetHours": 8
+    },
+    {
+      "confirmationNumber": "2070378484",
+      "orderNumber": "515541289",
+      "operationNumber": "0020",
+      "description": "Fit up new spool",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 6
+    },
+    {
+      "confirmationNumber": "2077751565",
+      "orderNumber": "209657977",
+      "operationNumber": "0010",
+      "description": "Fit up joint",
+      "workCenter": "WD-5710",
+      "status": "in-work",
+      "targetHours": 18
+    },
+    {
+      "confirmationNumber": "2020321117",
+      "orderNumber": "209657977",
+      "operationNumber": "0020",
+      "description": "Root pass",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2185224786",
+      "orderNumber": "204646985",
+      "operationNumber": "0010",
+      "description": "Grind flush",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 12
+    },
+    {
+      "confirmationNumber": "2034438595",
+      "orderNumber": "204646985",
+      "operationNumber": "0020",
+      "description": "Liquid penetrant inspection",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 12
+    },
+    {
+      "confirmationNumber": "2019684577",
+      "orderNumber": "204646985",
+      "operationNumber": "0030",
+      "description": "Seal weld",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 22
+    },
+    {
+      "confirmationNumber": "2132206283",
+      "orderNumber": "210242326",
+      "operationNumber": "0010",
+      "description": "Root pass",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 12
+    },
+    {
+      "confirmationNumber": "2176774892",
+      "orderNumber": "210242326",
+      "operationNumber": "0020",
+      "description": "Fill and cap",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 6
+    },
+    {
+      "confirmationNumber": "2148526793",
+      "orderNumber": "210242326",
+      "operationNumber": "0030",
+      "description": "Grind flush",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 22
+    },
+    {
+      "confirmationNumber": "2035063354",
+      "orderNumber": "203000340",
+      "operationNumber": "0010",
+      "description": "Prep joint ends",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 6
+    },
+    {
+      "confirmationNumber": "2106074423",
+      "orderNumber": "203000340",
+      "operationNumber": "0020",
+      "description": "Fit up joint",
+      "workCenter": "WD-5710",
+      "status": "not-started",
+      "targetHours": 16
+    },
+    {
+      "confirmationNumber": "2194845657",
+      "orderNumber": "518496339",
+      "operationNumber": "0010",
+      "description": "Disconnect and remove old pipe",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 10
+    },
+    {
+      "confirmationNumber": "2041907879",
+      "orderNumber": "518496339",
+      "operationNumber": "0020",
+      "description": "Fit up new spool",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 12
+    },
+    {
+      "confirmationNumber": "2027455235",
+      "orderNumber": "518496339",
+      "operationNumber": "0030",
+      "description": "Install hangers",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 22
+    },
+    {
+      "confirmationNumber": "2129708362",
+      "orderNumber": "506158022",
+      "operationNumber": "0010",
+      "description": "Fit up new spool",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 8
+    },
+    {
+      "confirmationNumber": "2064838735",
+      "orderNumber": "506158022",
+      "operationNumber": "0020",
+      "description": "Install hangers",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2098988333",
+      "orderNumber": "506158022",
+      "operationNumber": "0030",
+      "description": "Make up flanges",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2192423649",
+      "orderNumber": "506158022",
+      "operationNumber": "0040",
+      "description": "Install valve",
+      "workCenter": "PF-5610",
+      "status": "not-started",
+      "targetHours": 8
+    },
+    {
+      "confirmationNumber": "2100779003",
+      "orderNumber": "207579480",
+      "operationNumber": "0010",
+      "description": "Rig and lift",
+      "workCenter": "RG-5910",
+      "status": "not-started",
+      "targetHours": 14
+    },
+    {
+      "confirmationNumber": "2069667380",
+      "orderNumber": "207579480",
+      "operationNumber": "0020",
+      "description": "Move through hatch",
+      "workCenter": "RG-5910",
+      "status": "not-started",
+      "targetHours": 22
+    },
+    {
+      "confirmationNumber": "2144737075",
+      "orderNumber": "207579480",
+      "operationNumber": "0030",
+      "description": "Land and secure",
+      "workCenter": "RG-5910",
+      "status": "not-started",
+      "targetHours": 8
+    },
+    {
+      "confirmationNumber": "2071293539",
+      "orderNumber": "207579480",
+      "operationNumber": "0040",
+      "description": "Remove rigging",
+      "workCenter": "RG-5910",
+      "status": "not-started",
+      "targetHours": 8
+    },
+    {
+      "confirmationNumber": "2195021897",
+      "orderNumber": "515452175",
+      "operationNumber": "0010",
+      "description": "Torque fasteners",
+      "workCenter": "MS-3110",
+      "status": "complete",
+      "targetHours": 12
+    },
+    {
+      "confirmationNumber": "2039931292",
+      "orderNumber": "515452175",
+      "operationNumber": "0020",
+      "description": "Run test",
+      "workCenter": "MS-3110",
+      "status": "in-work",
+      "targetHours": 22
+    },
+    {
+      "confirmationNumber": "2053278823",
+      "orderNumber": "212731744",
+      "operationNumber": "0010",
+      "description": "Disassemble",
+      "workCenter": "MS-3110",
+      "status": "complete",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2188556515",
+      "orderNumber": "212731744",
+      "operationNumber": "0020",
+      "description": "Inspect and measure",
+      "workCenter": "MS-3110",
+      "status": "complete",
+      "targetHours": 16
+    },
+    {
+      "confirmationNumber": "2107421203",
+      "orderNumber": "212731744",
+      "operationNumber": "0030",
+      "description": "Machine to size",
+      "workCenter": "MS-3110",
+      "status": "in-work",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2016157655",
+      "orderNumber": "212731744",
+      "operationNumber": "0040",
+      "description": "Reassemble",
+      "workCenter": "MS-3110",
+      "status": "not-started",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2192483945",
+      "orderNumber": "212466363",
+      "operationNumber": "0010",
+      "description": "Inspect and measure",
+      "workCenter": "MS-3110",
+      "status": "complete",
+      "targetHours": 18
+    },
+    {
+      "confirmationNumber": "2095423270",
+      "orderNumber": "212466363",
+      "operationNumber": "0020",
+      "description": "Machine to size",
+      "workCenter": "MS-3110",
+      "status": "in-work",
+      "targetHours": 24
+    },
+    {
+      "confirmationNumber": "2148811100",
+      "orderNumber": "212466363",
+      "operationNumber": "0030",
+      "description": "Reassemble",
+      "workCenter": "MS-3110",
+      "status": "not-started",
+      "targetHours": 10
+    },
+    {
+      "confirmationNumber": "2191037565",
+      "orderNumber": "212466363",
+      "operationNumber": "0040",
+      "description": "Torque fasteners",
+      "workCenter": "MS-3110",
+      "status": "not-started",
+      "targetHours": 22
+    },
+    {
+      "confirmationNumber": "2033340616",
+      "orderNumber": "214927966",
+      "operationNumber": "0010",
+      "description": "Disassemble",
+      "workCenter": "MS-3110",
+      "status": "not-started",
+      "targetHours": 10
+    },
+    {
+      "confirmationNumber": "2027778467",
+      "orderNumber": "214927966",
+      "operationNumber": "0020",
+      "description": "Inspect and measure",
+      "workCenter": "MS-3110",
+      "status": "not-started",
+      "targetHours": 12
+    },
+    {
+      "confirmationNumber": "2046003176",
+      "orderNumber": "214927966",
+      "operationNumber": "0030",
+      "description": "Machine to size",
+      "workCenter": "MS-3110",
+      "status": "not-started",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2070070113",
+      "orderNumber": "510263387",
+      "operationNumber": "0010",
+      "description": "Install fixture",
+      "workCenter": "EL-5810",
+      "status": "complete",
+      "targetHours": 6
+    },
+    {
+      "confirmationNumber": "2051175017",
+      "orderNumber": "510263387",
+      "operationNumber": "0020",
+      "description": "Label circuits",
+      "workCenter": "EL-5810",
+      "status": "complete",
+      "targetHours": 10
+    },
+    {
+      "confirmationNumber": "2070902395",
+      "orderNumber": "510263387",
+      "operationNumber": "0030",
+      "description": "Megger test",
+      "workCenter": "EL-5810",
+      "status": "in-work",
+      "targetHours": 4
+    },
+    {
+      "confirmationNumber": "2111451818",
+      "orderNumber": "215255762",
+      "operationNumber": "0010",
+      "description": "Pull cable",
+      "workCenter": "EL-5810",
+      "status": "in-work",
+      "targetHours": 14
+    },
+    {
+      "confirmationNumber": "2174706187",
+      "orderNumber": "215255762",
+      "operationNumber": "0020",
+      "description": "Strip and terminate",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 16
+    },
+    {
+      "confirmationNumber": "2123063991",
+      "orderNumber": "507365317",
+      "operationNumber": "0010",
+      "description": "Strip and terminate",
+      "workCenter": "EL-5810",
+      "status": "complete",
+      "targetHours": 14
+    },
+    {
+      "confirmationNumber": "2185644576",
+      "orderNumber": "507365317",
+      "operationNumber": "0020",
+      "description": "Install fixture",
+      "workCenter": "EL-5810",
+      "status": "in-work",
+      "targetHours": 14
+    },
+    {
+      "confirmationNumber": "2178282313",
+      "orderNumber": "507365317",
+      "operationNumber": "0030",
+      "description": "Label circuits",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 4
+    },
+    {
+      "confirmationNumber": "2196593693",
+      "orderNumber": "507365317",
+      "operationNumber": "0040",
+      "description": "Megger test",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 16
+    },
+    {
+      "confirmationNumber": "2014077169",
+      "orderNumber": "216293403",
+      "operationNumber": "0010",
+      "description": "Pull cable",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 14
+    },
+    {
+      "confirmationNumber": "2061270892",
+      "orderNumber": "216293403",
+      "operationNumber": "0020",
+      "description": "Strip and terminate",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 10
+    },
+    {
+      "confirmationNumber": "2031705511",
+      "orderNumber": "216293403",
+      "operationNumber": "0030",
+      "description": "Install fixture",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 24
+    },
+    {
+      "confirmationNumber": "2163487708",
+      "orderNumber": "216293403",
+      "operationNumber": "0040",
+      "description": "Label circuits",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 18
+    },
+    {
+      "confirmationNumber": "2174238438",
+      "orderNumber": "519664667",
+      "operationNumber": "0010",
+      "description": "Strip and terminate",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 10
+    },
+    {
+      "confirmationNumber": "2089471335",
+      "orderNumber": "519664667",
+      "operationNumber": "0020",
+      "description": "Install fixture",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2164257024",
+      "orderNumber": "515186590",
+      "operationNumber": "0010",
+      "description": "Install fixture",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 6
+    },
+    {
+      "confirmationNumber": "2160497011",
+      "orderNumber": "515186590",
+      "operationNumber": "0020",
+      "description": "Label circuits",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2003708514",
+      "orderNumber": "515186590",
+      "operationNumber": "0030",
+      "description": "Megger test",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 24
+    },
+    {
+      "confirmationNumber": "2120407812",
+      "orderNumber": "515186590",
+      "operationNumber": "0040",
+      "description": "Energize and check",
+      "workCenter": "EL-5810",
+      "status": "not-started",
+      "targetHours": 22
+    },
+    {
+      "confirmationNumber": "2112206858",
+      "orderNumber": "206797772",
+      "operationNumber": "0010",
+      "description": "Land and secure",
+      "workCenter": "RG-5910",
+      "status": "complete",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2196657866",
+      "orderNumber": "206797772",
+      "operationNumber": "0020",
+      "description": "Remove rigging",
+      "workCenter": "RG-5910",
+      "status": "in-work",
+      "targetHours": 8
+    },
+    {
+      "confirmationNumber": "2165368221",
+      "orderNumber": "513629094",
+      "operationNumber": "0010",
+      "description": "Move through hatch",
+      "workCenter": "RG-5910",
+      "status": "not-started",
+      "targetHours": 14
+    },
+    {
+      "confirmationNumber": "2115781111",
+      "orderNumber": "513629094",
+      "operationNumber": "0020",
+      "description": "Land and secure",
+      "workCenter": "RG-5910",
+      "status": "not-started",
+      "targetHours": 24
+    },
+    {
+      "confirmationNumber": "2106457209",
+      "orderNumber": "513629094",
+      "operationNumber": "0030",
+      "description": "Remove rigging",
+      "workCenter": "RG-5910",
+      "status": "not-started",
+      "targetHours": 20
+    },
+    {
+      "confirmationNumber": "2093710305",
+      "orderNumber": "218363513",
+      "operationNumber": "0010",
+      "description": "Land and secure",
+      "workCenter": "RG-5910",
+      "status": "not-started",
+      "targetHours": 4
+    },
+    {
+      "confirmationNumber": "2097290804",
+      "orderNumber": "218363513",
+      "operationNumber": "0020",
+      "description": "Remove rigging",
+      "workCenter": "RG-5910",
+      "status": "not-started",
+      "targetHours": 10
+    }
+  ],
+  "charges": [
+    {
+      "confirmationNumber": "2182183003",
+      "personId": "u-umar-haddad",
+      "hours": 4.5,
+      "postingDate": "2026-11-16"
+    },
+    {
+      "confirmationNumber": "2182183003",
+      "personId": "u-zeke-holloway",
+      "hours": 4,
+      "postingDate": "2026-11-16"
+    },
+    {
+      "confirmationNumber": "2055271258",
+      "personId": "u-pipefitter-3",
+      "hours": 2.5,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2055271258",
+      "personId": "u-pipefitter-3",
+      "hours": 2.5,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2055271258",
+      "personId": "u-pipefitter-3",
+      "hours": 2,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2001264027",
+      "personId": "u-paulo-silva",
+      "hours": 2,
+      "postingDate": "2026-11-16"
+    },
+    {
+      "confirmationNumber": "2001264027",
+      "personId": "u-pipefitter-2",
+      "hours": 2,
+      "postingDate": "2026-11-16"
+    },
+    {
+      "confirmationNumber": "2001264027",
+      "personId": "u-paulo-silva",
+      "hours": 2.5,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2001264027",
+      "personId": "u-pipefitter-2",
+      "hours": 2,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2001264027",
+      "personId": "u-paulo-silva",
+      "hours": 2.5,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2001264027",
+      "personId": "u-pipefitter-2",
+      "hours": 2,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2048097666",
+      "personId": "u-umar-haddad",
+      "hours": 4.5,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2048097666",
+      "personId": "u-pipefitter-2",
+      "hours": 4,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2048097666",
+      "personId": "u-umar-haddad",
+      "hours": 4.5,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2048097666",
+      "personId": "u-pipefitter-2",
+      "hours": 4,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2198772038",
+      "personId": "u-pipefitter",
+      "hours": 11,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2148850996",
+      "personId": "u-shop-welder",
+      "hours": 1.5,
+      "postingDate": "2026-11-13"
+    },
+    {
+      "confirmationNumber": "2148850996",
+      "personId": "u-shop-welder",
+      "hours": 1.5,
+      "postingDate": "2026-11-16"
+    },
+    {
+      "confirmationNumber": "2148850996",
+      "personId": "u-shop-welder",
+      "hours": 1.5,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2185624820",
+      "personId": "u-welder-new",
+      "hours": 8,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2185624820",
+      "personId": "u-welder-new",
+      "hours": 17,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2096195474",
+      "personId": "u-luis-romero",
+      "hours": 4,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2096195474",
+      "personId": "u-welder-3",
+      "hours": 3.5,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2122361356",
+      "personId": "u-bianca-cruz",
+      "hours": 3,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2122361356",
+      "personId": "u-quinn-foster",
+      "hours": 3,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2082990386",
+      "personId": "u-welder-new",
+      "hours": 1.5,
+      "postingDate": "2026-11-16"
+    },
+    {
+      "confirmationNumber": "2082990386",
+      "personId": "u-bianca-cruz",
+      "hours": 1.5,
+      "postingDate": "2026-11-16"
+    },
+    {
+      "confirmationNumber": "2082990386",
+      "personId": "u-welder-new",
+      "hours": 1.5,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2082990386",
+      "personId": "u-bianca-cruz",
+      "hours": 1,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2106086315",
+      "personId": "u-welder-new",
+      "hours": 8,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2106086315",
+      "personId": "u-welder-new",
+      "hours": 15,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2183264427",
+      "personId": "u-welder-new",
+      "hours": 7.5,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2184409077",
+      "personId": "u-pipefitter-2",
+      "hours": 2,
+      "postingDate": "2026-11-12"
+    },
+    {
+      "confirmationNumber": "2184409077",
+      "personId": "u-pipefitter-2",
+      "hours": 2,
+      "postingDate": "2026-11-13"
+    },
+    {
+      "confirmationNumber": "2006094976",
+      "personId": "u-pipefitter",
+      "hours": 7.5,
+      "postingDate": "2026-11-16"
+    },
+    {
+      "confirmationNumber": "2006094976",
+      "personId": "u-pipefitter",
+      "hours": 7.5,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2074485039",
+      "personId": "u-aaron-blake",
+      "hours": 29,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2050289260",
+      "personId": "u-aaron-blake",
+      "hours": 4,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2050289260",
+      "personId": "u-felix-grant",
+      "hours": 3.5,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2191186666",
+      "personId": "u-kara-lindqvist",
+      "hours": 4,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2191186666",
+      "personId": "u-pipefitter",
+      "hours": 4,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2191186666",
+      "personId": "u-kara-lindqvist",
+      "hours": 4,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2191186666",
+      "personId": "u-pipefitter",
+      "hours": 3.5,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2009730615",
+      "personId": "u-felix-grant",
+      "hours": 6,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2143167076",
+      "personId": "u-umar-haddad",
+      "hours": 4,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2077751565",
+      "personId": "u-welder-new",
+      "hours": 5.5,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2077751565",
+      "personId": "u-quinn-foster",
+      "hours": 5,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2195021897",
+      "personId": "u-wes-carter",
+      "hours": 6,
+      "postingDate": "2026-11-12"
+    },
+    {
+      "confirmationNumber": "2195021897",
+      "personId": "u-maya-patel",
+      "hours": 5.5,
+      "postingDate": "2026-11-12"
+    },
+    {
+      "confirmationNumber": "2039931292",
+      "personId": "u-rosa-delgado",
+      "hours": 3.5,
+      "postingDate": "2026-11-13"
+    },
+    {
+      "confirmationNumber": "2039931292",
+      "personId": "u-rosa-delgado",
+      "hours": 3.5,
+      "postingDate": "2026-11-16"
+    },
+    {
+      "confirmationNumber": "2039931292",
+      "personId": "u-rosa-delgado",
+      "hours": 3.5,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2053278823",
+      "personId": "u-hassan-ali",
+      "hours": 4,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2053278823",
+      "personId": "u-caleb-dunn",
+      "hours": 4,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2053278823",
+      "personId": "u-hassan-ali",
+      "hours": 4.5,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2053278823",
+      "personId": "u-caleb-dunn",
+      "hours": 4,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2188556515",
+      "personId": "u-wes-carter",
+      "hours": 20,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2107421203",
+      "personId": "u-maya-patel",
+      "hours": 3,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2107421203",
+      "personId": "u-machinist",
+      "hours": 2.5,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2192483945",
+      "personId": "u-hassan-ali",
+      "hours": 8,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2192483945",
+      "personId": "u-maya-patel",
+      "hours": 14,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2095423270",
+      "personId": "u-machinist",
+      "hours": 10.5,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2070070113",
+      "personId": "u-xavier-bell",
+      "hours": 4,
+      "postingDate": "2026-11-16"
+    },
+    {
+      "confirmationNumber": "2070070113",
+      "personId": "u-xavier-bell",
+      "hours": 3.5,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2051175017",
+      "personId": "u-ivy-chen",
+      "hours": 12,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2070902395",
+      "personId": "u-seth-turner",
+      "hours": 0.5,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2070902395",
+      "personId": "u-dmitri-volkov",
+      "hours": 0.5,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2111451818",
+      "personId": "u-xavier-bell",
+      "hours": 2,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2111451818",
+      "personId": "u-xavier-bell",
+      "hours": 2,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2123063991",
+      "personId": "u-ivy-chen",
+      "hours": 16.5,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2185644576",
+      "personId": "u-ivy-chen",
+      "hours": 4.5,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2185644576",
+      "personId": "u-dmitri-volkov",
+      "hours": 4,
+      "postingDate": "2026-11-20"
+    },
+    {
+      "confirmationNumber": "2112206858",
+      "personId": "u-tanya-ivanova",
+      "hours": 3.5,
+      "postingDate": "2026-11-16"
+    },
+    {
+      "confirmationNumber": "2112206858",
+      "personId": "u-elena-park",
+      "hours": 3.5,
+      "postingDate": "2026-11-16"
+    },
+    {
+      "confirmationNumber": "2112206858",
+      "personId": "u-tanya-ivanova",
+      "hours": 3.5,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2112206858",
+      "personId": "u-elena-park",
+      "hours": 3.5,
+      "postingDate": "2026-11-17"
+    },
+    {
+      "confirmationNumber": "2112206858",
+      "personId": "u-tanya-ivanova",
+      "hours": 3.5,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2112206858",
+      "personId": "u-elena-park",
+      "hours": 3.5,
+      "postingDate": "2026-11-18"
+    },
+    {
+      "confirmationNumber": "2196657866",
+      "personId": "u-yara-nasser",
+      "hours": 1.5,
+      "postingDate": "2026-11-19"
+    },
+    {
+      "confirmationNumber": "2196657866",
+      "personId": "u-yara-nasser",
+      "hours": 1.5,
+      "postingDate": "2026-11-20"
+    }
+  ]
+}
